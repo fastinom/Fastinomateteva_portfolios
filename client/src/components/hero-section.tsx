@@ -1,5 +1,6 @@
-import { Rocket, Mail, Bus } from "lucide-react";
+import { Rocket, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@assets/pps-removebg-preview_1758116804296.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -46,8 +47,14 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex-shrink-0">
-            <div className="w-80 h-80 bg-card/20 rounded-2xl border-4 border-primary-foreground/20 flex items-center justify-center text-primary-foreground/60 text-6xl">
-              <Bus className="w-32 h-32" />
+            <div className="relative w-80 h-80 rounded-2xl border-4 border-primary-foreground/20 overflow-hidden bg-gradient-to-br from-card/20 to-card/40">
+              <img 
+                src={profileImage} 
+                alt="Fastino Mateteva - AI Research Scientist"
+                className="w-full h-full object-cover object-center"
+                data-testid="hero-profile-image"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
           </div>
         </div>

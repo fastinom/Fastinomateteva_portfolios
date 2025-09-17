@@ -4,6 +4,7 @@ import { blogPosts, BlogPost } from '@/data/blog';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { Button } from '@/components/ui/button';
+import profileImage from '@assets/pps-removebg-preview_1758116804296.png';
 
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>();
@@ -142,12 +143,22 @@ export default function BlogPostPage() {
         {/* Footer */}
         <footer className="border-t border-border pt-8 mt-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <h3 className="font-semibold mb-2">About the Author</h3>
-              <p className="text-muted-foreground">
-                Fastino Mateteva is an AI Research Scientist specializing in NLP and machine learning 
-                applications for African languages and contexts.
-              </p>
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-full border-2 border-accent overflow-hidden bg-gradient-to-br from-card to-secondary flex-shrink-0">
+                <img 
+                  src={profileImage} 
+                  alt="Fastino Mateteva"
+                  className="w-full h-full object-cover object-center"
+                  data-testid="author-profile-image"
+                />
+              </div>
+              <div>
+                <h3 className="font-semibold mb-2">About the Author</h3>
+                <p className="text-muted-foreground">
+                  Fastino Mateteva is an AI Research Scientist specializing in NLP and machine learning 
+                  applications for African languages and contexts.
+                </p>
+              </div>
             </div>
             
             <Button 

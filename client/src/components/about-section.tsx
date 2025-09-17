@@ -1,10 +1,21 @@
 import { GraduationCap, Heart, Target } from "lucide-react";
+import profileImage from "@assets/pps-removebg-preview_1758116804296.png";
 
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <div className="w-32 h-32 mx-auto rounded-full border-4 border-accent overflow-hidden bg-gradient-to-br from-card to-secondary">
+              <img 
+                src={profileImage} 
+                alt="Fastino Mateteva"
+                className="w-full h-full object-cover object-center"
+                data-testid="about-profile-image"
+              />
+            </div>
+          </div>
           <h2 className="text-4xl font-bold mb-4 text-foreground">About Me</h2>
           <div className="w-24 h-1 bg-accent mx-auto"></div>
         </div>
