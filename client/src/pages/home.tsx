@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
@@ -6,12 +7,18 @@ import ProjectsSection from "@/components/projects-section";
 import ExperienceSection from "@/components/experience-section";
 import AchievementsSection from "@/components/achievements-section";
 import TestimonialsSection from "@/components/testimonials-section";
+import BlogSection from "@/components/blog-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useScrollAnimation } from "@/hooks/use-intersection-observer";
 
 export default function Home() {
   const animateRef = useScrollAnimation();
+  const [selectedBlogCategory, setSelectedBlogCategory] = useState("All");
+
+  const handleBlogCategoryChange = (category: string) => {
+    setSelectedBlogCategory(category);
+  };
 
   return (
     <div className="bg-background text-foreground">
@@ -23,6 +30,12 @@ export default function Home() {
       <div ref={animateRef}><ExperienceSection /></div>
       <div ref={animateRef}><AchievementsSection /></div>
       <div ref={animateRef}><TestimonialsSection /></div>
+      <div ref={animateRef}>
+        <BlogSection 
+          selectedCategory={selectedBlogCategory}
+          onCategoryChange={handleBlogCategoryChange}
+        />
+      </div>
       <div ref={animateRef}><ContactSection /></div>
       <Footer />
     </div>

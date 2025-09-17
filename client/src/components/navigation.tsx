@@ -28,6 +28,7 @@ export default function Navigation() {
     { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
     { id: "testimonials", label: "Testimonials" },
+    { id: "blog", label: "Blog" },
     { id: "contact", label: "Contact" },
   ];
 
