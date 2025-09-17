@@ -1,5 +1,5 @@
 import { GraduationCap, Heart, Target } from "lucide-react";
-import profileImage from "@assets/pps-removebg-preview_1758116804296.png";
+import profileImage from "@assets/pps_1758111701428.jpg";
 
 export default function AboutSection() {
   return (

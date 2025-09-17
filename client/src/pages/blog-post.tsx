@@ -4,7 +4,7 @@ import { blogPosts, BlogPost } from '@/data/blog';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { Button } from '@/components/ui/button';
-import profileImage from '@assets/pps-removebg-preview_1758116804296.png';
+import profileImage from '@assets/pps_1758111701428.jpg';
 
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>();
