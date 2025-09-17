@@ -5,6 +5,7 @@ import SkillsSection from "@/components/skills-section";
 import ProjectsSection from "@/components/projects-section";
 import ExperienceSection from "@/components/experience-section";
 import AchievementsSection from "@/components/achievements-section";
+import TestimonialsSection from "@/components/testimonials-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useScrollAnimation } from "@/hooks/use-intersection-observer";
@@ -21,6 +22,7 @@ export default function Home() {
       <div ref={animateRef}><ProjectsSection /></div>
       <div ref={animateRef}><ExperienceSection /></div>
       <div ref={animateRef}><AchievementsSection /></div>
+      <div ref={animateRef}><TestimonialsSection /></div>
       <div ref={animateRef}><ContactSection /></div>
       <Footer />
     </div>
