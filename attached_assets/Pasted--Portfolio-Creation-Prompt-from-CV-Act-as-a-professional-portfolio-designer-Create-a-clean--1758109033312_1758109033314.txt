@@ -1,0 +1,89 @@
+📌 Portfolio Creation Prompt (from CV)
+
+*"Act as a professional portfolio designer. Create a clean, modern, and professional portfolio for me based on my CV. My name is Fastino Mateteva, an Artificial Intelligence and Machine Learning graduate (University of Zimbabwe, 2024). I specialize in AI, NLP, Big Data, and Cloud AI solutions. I founded Wangue.ai and developed Bantu language technologies (speech-to-text, text-to-speech, spell checker).
+
+Use the following structure:
+
+Landing Page / Introduction
+
+Name: Fastino Mateteva
+
+Tagline: AI Research Scientist | Data Scientist | Language Technology Innovator
+
+Professional photo placeholder
+
+Short profile summary from CV
+
+About Me
+
+Degree & University
+
+Passion for AI and Data Science
+
+Career goals (AI Research Scientist, Data Scientist, Cloud AI Innovator)
+
+Skills Section
+
+Core: AI/ML, NLP, Big Data, LLMs
+
+Technical: Python, Deep Learning, Software Development, Power BI, SPSS, PHP, Linux, AWS, Hugging Face
+
+Projects Section (with descriptions and dates from CV)
+
+Pricing Engine for Banks
+
+Zimpapers Project
+
+News Clustering App
+
+Fraud Detection Web App
+
+National NLP Project (TTS & STT for Bantu Languages)
+
+Next Word Shona Prediction App
+
+Image Captioning Web App
+
+Storeroom Management System
+
+Air Quality Monitoring System (showcased at 2022 Innovation Hub)
+
+Professional Experience
+
+AI Innovation Futurist – AI Institute Africa (AI Training, Research, Product Implementation)
+
+AI Developer – Rubiem Solutions (RAG apps, NLP, ML, Data Processing)
+
+AI Research Scientist – ZCHPC (Big Data, LLMs, NLP, TTS/STT)
+
+IT Intern – Midlands State University (Data Analysis, Tech Support)
+
+Achievements & Exhibitions
+
+POTRAZ Innovation Expo (Wangue.ai)
+
+University of Zimbabwe Research Week (Air Monitoring System)
+
+Chess Academy Founder (youth empowerment initiative)
+
+Contact Section
+
+Email: fastinomateteva@gmail.com
+
+Phone: +263774707106 / +263715752315
+
+LinkedIn: linkedin.com/in/fastino-mateteva-0a5b65221
+
+Download CV Button
+
+Design requirements:
+
+Responsive and modern layout
+
+Professional fonts, soft colors, minimal but impactful visuals
+
+Grid or card-based project display
+
+Icons for skills and contact info
+
+Option to export as website code (HTML/CSS/JS) or a PDF portfolio"*
