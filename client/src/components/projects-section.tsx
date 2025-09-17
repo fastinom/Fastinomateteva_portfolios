@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { 
   Building2, 
   Newspaper, 
@@ -7,10 +8,26 @@ import {
   Keyboard, 
   Image, 
   Warehouse, 
-  Wind 
+  Wind,
+  Filter
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function ProjectsSection() {
+  const [selectedFilter, setSelectedFilter] = useState("All");
+
+  const filterCategories = [
+    "All",
+    "ML", 
+    "NLP",
+    "Fintech",
+    "Security",
+    "Speech",
+    "Computer Vision",
+    "IoT",
+    "Deep Learning"
+  ];
+
   const projects = [
     {
       icon: Building2,
@@ -77,6 +94,17 @@ export default function ProjectsSection() {
     }
   ];
 
+  // Filter projects based on selected category
+  const filteredProjects = selectedFilter === "All" 
+    ? projects 
+    : projects.filter(project => 
+        project.tags.some(tag => 
+          tag.toLowerCase() === selectedFilter.toLowerCase() ||
+          (selectedFilter === "Computer Vision" && tag === "Computer Vision") ||
+          (selectedFilter === "Deep Learning" && tag === "Deep Learning")
+        )
+      );
+
   return (
     <section id="projects" className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
@@ -86,9 +114,26 @@ export default function ProjectsSection() {
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             A showcase of innovative AI and machine learning projects spanning fintech, media, healthcare, and language technology.
           </p>
+          
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
+            <Filter className="w-5 h-5 text-muted-foreground mr-2" />
+            {filterCategories.map((category) => (
+              <Button
+                key={category}
+                variant={selectedFilter === category ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedFilter(category)}
+                className="text-xs"
+                data-testid={`filter-${category.toLowerCase()}`}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div key={index} className="bg-secondary/30 rounded-xl p-6 card-hover" data-testid={`project-card-${index}`}>
               <div className="text-accent text-3xl mb-4">
                 <project.icon className="w-8 h-8" />
