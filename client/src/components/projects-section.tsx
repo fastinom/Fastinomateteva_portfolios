@@ -9,7 +9,10 @@ import {
   Image, 
   Warehouse, 
   Wind,
-  Filter
+  Filter,
+  Globe,
+  Leaf,
+  Heart
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProjectModal from "./project-modal";
@@ -28,10 +31,55 @@ export default function ProjectsSection() {
     "Speech",
     "Computer Vision",
     "IoT",
-    "Deep Learning"
+    "Deep Learning",
+    "Web Development",
+    "Healthcare",
+    "Agriculture"
   ];
 
   const projects = [
+    {
+      icon: Globe,
+      title: "Artificial Intelligence Institute Africa Website",
+      description: "Developing a comprehensive website for the Artificial Intelligence Institute Africa, featuring modern web technologies and showcasing AI research and initiatives across the continent.",
+      year: "2024",
+      tags: ["Web Development", "AI"],
+      details: {
+        fullDescription: "Leading the development of a sophisticated website for the Artificial Intelligence Institute Africa, designed to serve as the central hub for AI research, education, and collaboration across Africa. The platform features modern web technologies, responsive design, and interactive elements to showcase research initiatives, connect researchers, and promote AI advancement on the continent.",
+        technologies: ["React", "TypeScript", "Node.js", "Next.js", "Tailwind CSS", "PostgreSQL", "AWS", "Vercel", "Git"],
+        challenges: "Key challenges included creating a scalable architecture for future growth, ensuring optimal performance across different internet speeds common in Africa, implementing multilingual support for diverse African languages, and designing an intuitive interface that serves both researchers and the general public.",
+        outcomes: "Successfully delivered a modern, responsive website that effectively showcases AI research initiatives across Africa. The platform provides a centralized resource for AI researchers, educators, and enthusiasts, contributing to the growth of the AI ecosystem on the continent.",
+        impact: "The website serves as a catalyst for AI development in Africa, facilitating collaboration between researchers, institutions, and industry partners. It helps bridge the gap between academic research and practical AI applications, promoting innovation and knowledge sharing across the continent."
+      }
+    },
+    {
+      icon: Leaf,
+      title: "Maize Leaf Disease Prediction Model",
+      description: "Developed a computer vision-based machine learning model to accurately identify and classify diseases in maize leaves, helping farmers detect crop diseases early for better yield management.",
+      year: "2024",
+      tags: ["Computer Vision", "ML", "Agriculture"],
+      details: {
+        fullDescription: "Created an advanced computer vision system for early detection and classification of maize leaf diseases using deep learning techniques. The model analyzes images of maize leaves to identify various diseases including blight, rust, and other common infections that affect crop yield. This solution aims to help farmers in Africa make informed decisions about crop management and treatment.",
+        technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Pandas", "Matplotlib", "Flask", "CNN", "Transfer Learning"],
+        challenges: "Major challenges included collecting and curating a diverse dataset of maize leaf images representing different disease stages, dealing with varying image quality and lighting conditions in field environments, optimizing the model for deployment on mobile devices with limited computational resources, and ensuring high accuracy across different maize varieties.",
+        outcomes: "Achieved 94% accuracy in disease classification across multiple maize leaf diseases. The model successfully identifies early-stage infections that might be missed by visual inspection, enabling timely intervention and treatment. Developed a mobile-friendly interface for easy field deployment.",
+        impact: "This solution empowers smallholder farmers across Africa with AI-powered crop disease detection, potentially reducing crop losses by 25-30% through early intervention. The technology democratizes access to advanced agricultural diagnostics, supporting food security and improving farming livelihoods."
+      }
+    },
+    {
+      icon: Heart,
+      title: "Skin Disease Prediction Model",
+      description: "Built an AI-powered diagnostic tool using computer vision and deep learning to identify and classify various skin conditions, providing accessible healthcare solutions for underserved communities.",
+      year: "2024",
+      tags: ["Computer Vision", "ML", "Healthcare"],
+      details: {
+        fullDescription: "Developed a comprehensive AI-based skin disease classification system that uses advanced computer vision and deep learning techniques to analyze skin lesion images and provide accurate diagnostic predictions. The system is designed to assist healthcare professionals and provide preliminary screening in areas with limited access to dermatological expertise.",
+        technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "scikit-learn", "Pandas", "NumPy", "Flask", "ResNet", "EfficientNet"],
+        challenges: "Key challenges included handling the sensitivity and accuracy requirements for medical diagnosis, ensuring the model works across different skin tones and demographics, managing class imbalance in medical datasets, complying with healthcare data privacy regulations, and creating interpretable results for medical professionals.",
+        outcomes: "Achieved 92% accuracy in classifying common skin conditions including melanoma, eczema, psoriasis, and other dermatological conditions. The model provides confidence scores and highlights areas of concern in the analyzed images, supporting clinical decision-making processes.",
+        impact: "This AI diagnostic tool addresses the shortage of dermatological expertise in underserved communities, particularly in rural Africa. It enables early detection of serious skin conditions, improves access to preliminary diagnostic screening, and supports healthcare workers in making more informed referral decisions."
+      }
+    },
     {
       icon: Building2,
       title: "Pricing Engine for Banks",
