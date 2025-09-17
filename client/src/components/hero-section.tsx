@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 onClick={() => scrollToSection("projects")}
-                className="bg-card text-foreground px-8 py-3 rounded-lg font-medium hover:bg-card/90 transition-colors inline-flex items-center gap-2"
+                className="pulse-on-hover bg-card text-foreground px-8 py-3 rounded-lg font-medium hover:bg-card/90 transition-colors inline-flex items-center gap-2"
                 data-testid="button-view-work"
               >
                 <Rocket className="w-4 h-4" />
@@ -37,7 +37,7 @@ export default function HeroSection() {
               <Button
                 onClick={() => scrollToSection("contact")}
                 variant="outline"
-                className="border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary-foreground hover:text-primary transition-colors inline-flex items-center gap-2"
+                className="pulse-on-hover border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary-foreground hover:text-primary transition-colors inline-flex items-center gap-2"
                 data-testid="button-get-in-touch"
               >
                 <Mail className="w-4 h-4" />

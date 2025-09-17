@@ -46,7 +46,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="hover:text-primary transition-colors"
+                className="nav-link hover:text-primary transition-colors"
                 data-testid={`nav-${item.id}`}
               >
                 {item.label}

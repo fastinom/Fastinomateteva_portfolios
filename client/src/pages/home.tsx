@@ -7,18 +7,21 @@ import ExperienceSection from "@/components/experience-section";
 import AchievementsSection from "@/components/achievements-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import { useScrollAnimation } from "@/hooks/use-intersection-observer";
 
 export default function Home() {
+  const animateRef = useScrollAnimation();
+
   return (
     <div className="bg-background text-foreground">
       <Navigation />
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <AchievementsSection />
-      <ContactSection />
+      <div ref={animateRef}><AboutSection /></div>
+      <div ref={animateRef}><SkillsSection /></div>
+      <div ref={animateRef}><ProjectsSection /></div>
+      <div ref={animateRef}><ExperienceSection /></div>
+      <div ref={animateRef}><AchievementsSection /></div>
+      <div ref={animateRef}><ContactSection /></div>
       <Footer />
     </div>
   );
