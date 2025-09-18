@@ -1,4 +1,5 @@
 import { Mail, Phone, Linkedin, Download } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function ContactSection() {
   const contacts = [
@@ -22,6 +23,13 @@ export default function ContactSection() {
       value: "Connect with me",
       href: "https://linkedin.com/in/fastino-mateteva-0a5b65221",
       testId: "contact-linkedin"
+    },
+    {
+      icon: SiWhatsapp,
+      title: "WhatsApp",
+      value: "+263 715 752 315",
+      href: "https://wa.me/263715752315",
+      testId: "contact-whatsapp"
     }
   ];
 
@@ -43,7 +51,7 @@ export default function ContactSection() {
             Ready to collaborate on cutting-edge AI projects or discuss innovative solutions? Let's connect and explore the possibilities together.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
           {contacts.map((contact, index) => (
             <a
               key={index}
