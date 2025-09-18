@@ -30,7 +30,7 @@ export default function ExperienceSection() {
     {
       title: "IT Intern",
       company: "Midlands State University",
-      period: "2023-2023",
+      period: "2022-2023",
       description: "Gained foundational experience in data analysis and technical support, developing core competencies in IT infrastructure management and data-driven problem solving.",
       tags: ["Data Analysis", "Tech Support"],
       borderColor: "border-muted",
