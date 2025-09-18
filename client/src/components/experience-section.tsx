@@ -12,7 +12,7 @@ export default function ExperienceSection() {
     {
       title: "AI Developer",
       company: "Rubiem Solutions",
-      period: "2023-2024",
+      period: "Current",
       description: "Developed RAG (Retrieval-Augmented Generation) applications, implemented advanced NLP solutions, and built machine learning models for data processing and analysis applications.",
       tags: ["RAG Applications", "NLP", "ML", "Data Processing"],
       borderColor: "border-primary",
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
     {
       title: "AI Research Scientist",
       company: "ZCHPC (Zimbabwe Centre for High Performance Computing)",
-      period: "2022-2023",
+      period: "2024",
       description: "Conducted advanced research in Big Data analytics, Large Language Models, and Natural Language Processing. Specialized in developing Text-to-Speech and Speech-to-Text systems for African languages.",
       tags: ["Big Data", "LLMs", "NLP", "TTS/STT"],
       borderColor: "border-primary",
@@ -30,7 +30,7 @@ export default function ExperienceSection() {
     {
       title: "IT Intern",
       company: "Midlands State University",
-      period: "2021-2022",
+      period: "2023-2023",
       description: "Gained foundational experience in data analysis and technical support, developing core competencies in IT infrastructure management and data-driven problem solving.",
       tags: ["Data Analysis", "Tech Support"],
       borderColor: "border-muted",
