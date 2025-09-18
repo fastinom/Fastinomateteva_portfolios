@@ -42,7 +42,7 @@ export default function ProjectsSection() {
       icon: Globe,
       title: "Artificial Intelligence Institute Africa Website",
       description: "Developing a comprehensive website for the Artificial Intelligence Institute Africa, featuring modern web technologies and showcasing AI research and initiatives across the continent.",
-      year: "2024",
+      year: "2025",
       tags: ["Web Development", "AI"],
       details: {
         fullDescription: "Leading the development of a sophisticated website for the Artificial Intelligence Institute Africa, designed to serve as the central hub for AI research, education, and collaboration across Africa. The platform features modern web technologies, responsive design, and interactive elements to showcase research initiatives, connect researchers, and promote AI advancement on the continent.",
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
       icon: Building2,
       title: "Pricing Engine for Banks",
       description: "Developed an advanced algorithmic pricing engine for financial institutions, utilizing machine learning models to optimize loan pricing strategies and risk assessment.",
-      year: "2024",
+      year: "2025",
       tags: ["ML", "Fintech"],
       details: {
         fullDescription: "Designed and implemented a comprehensive pricing engine for financial institutions that leverages advanced machine learning algorithms to optimize loan pricing strategies. The system integrates risk assessment models, market analysis, and competitive intelligence to provide real-time pricing recommendations that maximize profitability while maintaining competitive positioning.",
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
       icon: Newspaper,
       title: "Zimpapers Project",
       description: "Created an intelligent content management and analysis system for Zimbabwe's largest media house, incorporating NLP for content categorization and reader engagement optimization.",
-      year: "2023",
+      year: "2024",
       tags: ["NLP", "Media"]
     },
     {
