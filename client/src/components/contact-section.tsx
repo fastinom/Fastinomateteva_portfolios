@@ -34,9 +34,10 @@ export default function ContactSection() {
   ];
 
   const handleDownloadCV = () => {
-    // Create a link to download the CV
+    // Create a link to download the CV with base-aware URL
     const link = document.createElement('a');
-    link.href = '/cv/fastino-mateteva-cv.pdf';
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    link.href = `${baseUrl}cv/fastino-mateteva-cv.pdf`;
     link.download = 'Fastino-Mateteva-CV.pdf';
     link.click();
   };
