@@ -18,10 +18,10 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Michael Rodriguez",
-    role: "Senior Machine Learning Engineer", 
-    company: "FinanceFlow Solutions",
-    content: "I had the pleasure of working with Fastino on our fraud detection system. His expertise in ensemble learning methods and attention to detail resulted in a 40% improvement in our detection accuracy. He's not just technically brilliant but also an excellent communicator who can explain complex concepts clearly.",
+    name: "DR Dennis Magaya",
+    role: "CEO", 
+    company: "Rubiem Solutions",
+    content: "I had the pleasure of working with Fastino Mateteva on the development of a pricing engine for banks. He demonstrated strong technical expertise, analytical thinking, and a proactive approach to problem-solving. His contributions were critical in ensuring the project’s success, and I confidently recommend him for any role that requires innovation and dedication.",
     rating: 5
   },
   {
