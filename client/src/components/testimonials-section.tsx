@@ -11,9 +11,9 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Lead Data Scientist",
-    company: "TechCorp AI Division",
+    name: "Thabolezwe Mabandla",
+    role: "Mastercard Scholar at CMU Africa",
+    company: "CMU Africa Student",
     content: "Fastino's work on natural language processing for Bantu languages is groundbreaking. His deep understanding of both technical implementation and cultural nuances resulted in systems that truly serve the community. The TTS/STT project he led has set new standards for indigenous language technology.",
     rating: 5
   },
@@ -25,30 +25,30 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Prof. James Mukamuri",
-    role: "Computer Science Professor",
+    name: "Dr Tatenda Kavu",
+    role: "Computer Science Lecturer",
     company: "University of Zimbabwe",
     content: "Fastino was one of our most dedicated students who became a respected colleague. His research contributions in AI and NLP, particularly for African languages, demonstrate both academic rigor and practical impact. He consistently delivers innovative solutions to complex problems.",
     rating: 5
   },
   {
-    name: "Amanda Thompson",
+    name: "Tapiwa Charekwa",
     role: "Product Manager",
     company: "NewsHub Analytics",
     content: "The news clustering application Fastino developed transformed how we organize and present content to our users. His machine learning approach to content categorization improved user engagement by 60%. Working with him was seamless - he understood our business needs and delivered beyond expectations.",
     rating: 5
   },
   {
-    name: "Dr. Robert Sibanda",
-    role: "Research Director",
+    name: "Mr Munyaradzi",
+    role: "Computer Science Department Lecturer",
     company: "Innovation Hub Zimbabwe",
     content: "Fastino's air quality monitoring system showcased at our 2022 Innovation Hub demonstrated exceptional integration of IoT, data analytics, and environmental science. His ability to bridge academic research with practical applications makes him a valuable asset to any team.",
     rating: 5
   },
   {
-    name: "Lisa Park",
+    name: "Patience Mupikeni",
     role: "CTO",
-    company: "VisionTech Solutions",
+    company: "Rubiem Solutions",
     content: "The image captioning system Fastino built for us exceeded all performance benchmarks. His expertise in computer vision and NLP created a solution that processes thousands of images daily with remarkable accuracy. His code quality and documentation standards are exemplary."
   }
 ];
